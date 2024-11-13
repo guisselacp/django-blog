@@ -30,8 +30,8 @@ SECRET_KEY = os.environ.get("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['8000-guisselacp-djangoblog-mps08ilslce.ws.codeinstitute-ide.net','.herokuapp.com']
-
+# ALLOWED_HOSTS = ['8000-guisselacp-djangoblog-mps08ilslce.ws.codeinstitute-ide.net','.herokuapp.com']
+ALLOWED_HOSTS = ['8000-guisselacp-djangoblog-1j5p0xyeimf.ws.codeinstitute-ide.net','.herokuapp.com']
 
 # Application definition
 
@@ -88,6 +88,12 @@ WSGI_APPLICATION = 'codestar.wsgi.application'
 DATABASES = {
     'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
 }
+
+# You need to add both your local development server URL domain and your production server URL domain to allow you to add blog post content from the admin dashboard. 
+CSRF_TRUSTED_ORIGINS = [
+    "https://*.codeinstitute-ide.net/",
+    "https://*.herokuapp.com"
+]
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
