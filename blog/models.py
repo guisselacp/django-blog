@@ -20,3 +20,18 @@ class Post(models.Model):
     # An attribute status defined as an integer field with a default of 0.
     status = models.IntegerField(choices=STATUS, default=0)
     excerpt = models.TextField(blank=True)
+    update_on = models.DateTimeField(auto_now=True)
+
+
+class Comment(models.Model):
+    # many-to-one relationship with the Post model. If a blog post is deleted the comments on it should also be deleted.
+    post = models.ForeignKey(
+        Post, on_delete=models.CASCADE, related_name="comments")
+    # many-to-one relationship with the built-in User model. If a user account is deleted the user's comments will be deleted also.
+    author = models.ForeignKey(
+        User, on_delete=models.CASCADE, related_name="commenter")
+    body = models.TextField()
+    # Set the default attribute to False.
+    approved = models.BooleanField(default=False)
+    # Automatically populates when a comment is added but not when updated.
+    created_on = models.DateTimeField(auto_now_add=True)
