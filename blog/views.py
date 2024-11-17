@@ -8,7 +8,10 @@ from .models import Post
 # Create your views here.
 class PostList(generic.ListView):
     queryset = Post.objects.filter(status=1)
-    template_name = "post_list.html"
+    # Delete the followin code and replace for the next code
+    # template_name = "post_list.html"
+    template_name = "blog/index.html"
+    paginate_by = 6
     
 # Delete the following two lines
 # def my_blog(request):
