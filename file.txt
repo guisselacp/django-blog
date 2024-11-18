@@ -1,0 +1,101 @@
+gitpod /workspace/django-blog (main) $ heroku logs --tail --app my-project-django-blog-0
+2024-11-14T00:35:03.594396+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2024-11-14T00:35:03.609308+00:00 app[web.1]: [2024-11-14 00:35:03 +0000] [9] [INFO] Worker exiting (pid: 9)
+2024-11-14T00:35:03.609321+00:00 app[web.1]: [2024-11-14 00:35:03 +0000] [10] [INFO] Worker exiting (pid: 10)
+2024-11-14T00:35:03.609340+00:00 app[web.1]: [2024-11-14 00:35:03 +0000] [2] [INFO] Handling signal: term
+2024-11-14T00:35:03.709693+00:00 app[web.1]: [2024-11-14 00:35:03 +0000] [2] [INFO] Shutting down: Master
+2024-11-14T00:35:03.774199+00:00 heroku[web.1]: Process exited with status 0
+2024-11-15T20:38:22.000000+00:00 app[api]: Build started by user oaq4klc9@students.codeinstitute.net
+2024-11-15T20:38:50.630385+00:00 app[api]: Deploy 1b452455 by user oaq4klc9@students.codeinstitute.net
+2024-11-15T20:38:50.630385+00:00 app[api]: Release v14 created by user oaq4klc9@students.codeinstitute.net
+2024-11-15T20:38:52.410407+00:00 heroku[web.1]: State changed from down to starting
+2024-11-15T20:38:54.158603+00:00 heroku[web.1]: Starting process with command `gunicorn codestar.wsgi`
+2024-11-15T20:38:54.622747+00:00 app[web.1]: Python buildpack: Detected 512 MB available memory and 8 CPU cores.
+2024-11-15T20:38:54.622834+00:00 app[web.1]: Python buildpack: Defaulting WEB_CONCURRENCY to 2 based on the available memory.
+2024-11-15T20:38:54.885300+00:00 app[web.1]: [2024-11-15 20:38:54 +0000] [2] [INFO] Starting gunicorn 20.1.0
+2024-11-15T20:38:54.885585+00:00 app[web.1]: [2024-11-15 20:38:54 +0000] [2] [INFO] Listening at: http://0.0.0.0:22748 (2)
+2024-11-15T20:38:54.885621+00:00 app[web.1]: [2024-11-15 20:38:54 +0000] [2] [INFO] Using worker: sync
+2024-11-15T20:38:54.887615+00:00 app[web.1]: [2024-11-15 20:38:54 +0000] [9] [INFO] Booting worker with pid: 9
+2024-11-15T20:38:54.954802+00:00 app[web.1]: [2024-11-15 20:38:54 +0000] [10] [INFO] Booting worker with pid: 10
+2024-11-15T20:38:55.260320+00:00 heroku[web.1]: State changed from starting to up
+2024-11-15T20:38:56.000000+00:00 app[api]: Build succeeded
+2024-11-15T20:39:05.859213+00:00 app[web.1]: 10.1.12.41 - - [15/Nov/2024:20:39:05 +0000] "GET / HTTP/1.1" 200 896 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+2024-11-15T20:39:05.859534+00:00 heroku[router]: at=info method=GET path="/" host=my-project-django-blog-0-f199795ae248.herokuapp.com request_id=f5c4bc58-9a18-4c77-af87-4bc4504a9f6f fwd="84.67.143.45" dyno=web.1 connect=0ms service=588ms status=200 bytes=1177 protocol=https
+2024-11-15T20:39:06.489360+00:00 app[web.1]: 10.1.12.41 - - [15/Nov/2024:20:39:06 +0000] "GET /favicon.ico HTTP/1.1" 404 179 "https://my-project-django-blog-0-f199795ae248.herokuapp.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+2024-11-15T20:39:06.489894+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=my-project-django-blog-0-f199795ae248.herokuapp.com request_id=287dc84f-4819-4469-8c0c-beb2e6f8fe41 fwd="84.67.143.45" dyno=web.1 connect=0ms service=3ms status=404 bytes=467 protocol=https
+2024-11-15T21:15:26.202869+00:00 heroku[web.1]: Idling
+2024-11-15T21:15:26.204602+00:00 heroku[web.1]: State changed from up to down
+2024-11-15T21:15:27.554604+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2024-11-15T21:15:27.568710+00:00 app[web.1]: [2024-11-15 21:15:27 +0000] [9] [INFO] Worker exiting (pid: 9)
+2024-11-15T21:15:27.568722+00:00 app[web.1]: [2024-11-15 21:15:27 +0000] [10] [INFO] Worker exiting (pid: 10)
+2024-11-15T21:15:27.568789+00:00 app[web.1]: [2024-11-15 21:15:27 +0000] [2] [INFO] Handling signal: term
+2024-11-15T21:15:27.669100+00:00 app[web.1]: [2024-11-15 21:15:27 +0000] [2] [INFO] Shutting down: Master
+2024-11-15T21:15:27.724547+00:00 heroku[web.1]: Process exited with status 0
+2024-11-18T10:46:24.579271+00:00 app[api]: Release v15 created by user oaq4klc9@students.codeinstitute.net
+2024-11-18T10:46:24.579271+00:00 app[api]: Remove DISABLE_COLLECTSTATIC config vars by user oaq4klc9@students.codeinstitute.net
+2024-11-18T10:46:25.754364+00:00 heroku[web.1]: State changed from down to starting
+2024-11-18T10:46:27.517176+00:00 heroku[web.1]: Starting process with command `gunicorn codestar.wsgi`
+2024-11-18T10:46:27.997640+00:00 app[web.1]: Python buildpack: Detected 512 MB available memory and 8 CPU cores.
+2024-11-18T10:46:27.997712+00:00 app[web.1]: Python buildpack: Defaulting WEB_CONCURRENCY to 2 based on the available memory.
+2024-11-18T10:46:28.278154+00:00 app[web.1]: [2024-11-18 10:46:28 +0000] [2] [INFO] Starting gunicorn 20.1.0
+2024-11-18T10:46:28.278417+00:00 app[web.1]: [2024-11-18 10:46:28 +0000] [2] [INFO] Listening at: http://0.0.0.0:3355 (2)
+2024-11-18T10:46:28.278443+00:00 app[web.1]: [2024-11-18 10:46:28 +0000] [2] [INFO] Using worker: sync
+2024-11-18T10:46:28.280321+00:00 app[web.1]: [2024-11-18 10:46:28 +0000] [9] [INFO] Booting worker with pid: 9
+2024-11-18T10:46:28.370221+00:00 app[web.1]: [2024-11-18 10:46:28 +0000] [10] [INFO] Booting worker with pid: 10
+2024-11-18T10:46:28.616713+00:00 heroku[web.1]: State changed from starting to up
+2024-11-18T10:47:16.000000+00:00 app[api]: Build started by user oaq4klc9@students.codeinstitute.net
+2024-11-18T10:47:50.994671+00:00 app[api]: Release v16 created by user oaq4klc9@students.codeinstitute.net
+2024-11-18T10:47:50.994671+00:00 app[api]: Deploy 57db24a8 by user oaq4klc9@students.codeinstitute.net
+2024-11-18T10:47:52.202735+00:00 heroku[web.1]: Restarting
+2024-11-18T10:47:52.206947+00:00 heroku[web.1]: State changed from up to starting
+2024-11-18T10:47:52.795569+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2024-11-18T10:47:52.808689+00:00 app[web.1]: [2024-11-18 10:47:52 +0000] [10] [INFO] Worker exiting (pid: 10)
+2024-11-18T10:47:52.808701+00:00 app[web.1]: [2024-11-18 10:47:52 +0000] [9] [INFO] Worker exiting (pid: 9)
+2024-11-18T10:47:52.808737+00:00 app[web.1]: [2024-11-18 10:47:52 +0000] [2] [INFO] Handling signal: term
+2024-11-18T10:47:52.909117+00:00 app[web.1]: [2024-11-18 10:47:52 +0000] [2] [INFO] Shutting down: Master
+2024-11-18T10:47:52.978754+00:00 heroku[web.1]: Process exited with status 0
+2024-11-18T10:47:53.847799+00:00 heroku[web.1]: Starting process with command `gunicorn codestar.wsgi`
+2024-11-18T10:47:54.329580+00:00 app[web.1]: Python buildpack: Detected 512 MB available memory and 8 CPU cores.
+2024-11-18T10:47:54.329651+00:00 app[web.1]: Python buildpack: Defaulting WEB_CONCURRENCY to 2 based on the available memory.
+2024-11-18T10:47:54.378008+00:00 app[web.1]: /bin/bash: line 1: gunicorn: command not found
+2024-11-18T10:47:54.422006+00:00 heroku[web.1]: Process exited with status 127
+2024-11-18T10:47:54.442832+00:00 heroku[web.1]: State changed from starting to crashed
+2024-11-18T10:47:54.445219+00:00 heroku[web.1]: State changed from crashed to starting
+2024-11-18T10:47:56.144721+00:00 heroku[web.1]: Starting process with command `gunicorn codestar.wsgi`
+2024-11-18T10:47:56.675499+00:00 app[web.1]: Python buildpack: Detected 512 MB available memory and 8 CPU cores.
+2024-11-18T10:47:56.675587+00:00 app[web.1]: Python buildpack: Defaulting WEB_CONCURRENCY to 2 based on the available memory.
+2024-11-18T10:47:56.747506+00:00 app[web.1]: /bin/bash: line 1: gunicorn: command not found
+2024-11-18T10:47:56.782559+00:00 heroku[web.1]: Process exited with status 127
+2024-11-18T10:47:56.806071+00:00 heroku[web.1]: State changed from starting to crashed
+2024-11-18T10:47:57.000000+00:00 app[api]: Build succeeded
+2024-11-18T10:48:07.602977+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=my-project-django-blog-0-f199795ae248.herokuapp.com request_id=179ea324-ea90-4cd7-acde-8b6bdf3e32c4 fwd="84.67.143.45" dyno= connect= service= status=503 bytes= protocol=https
+2024-11-18T10:48:08.537979+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=my-project-django-blog-0-f199795ae248.herokuapp.com request_id=20e5212a-542a-4e78-84df-d1204112d691 fwd="84.67.143.45" dyno= connect= service= status=503 bytes= protocol=https
+2024-11-18T11:08:44.962899+00:00 heroku[web.1]: State changed from crashed to starting
+2024-11-18T11:08:46.703160+00:00 heroku[web.1]: Starting process with command `gunicorn codestar.wsgi`
+2024-11-18T11:08:47.187061+00:00 app[web.1]: Python buildpack: Detected 512 MB available memory and 8 CPU cores.
+2024-11-18T11:08:47.187134+00:00 app[web.1]: Python buildpack: Defaulting WEB_CONCURRENCY to 2 based on the available memory.
+2024-11-18T11:08:47.234713+00:00 app[web.1]: /bin/bash: line 1: gunicorn: command not found
+2024-11-18T11:08:47.290187+00:00 heroku[web.1]: Process exited with status 127
+2024-11-18T11:08:47.314243+00:00 heroku[web.1]: State changed from starting to crashed
+2024-11-18T11:14:32.000000+00:00 app[api]: Build started by user oaq4klc9@students.codeinstitute.net
+2024-11-18T11:14:36.372474+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=my-project-django-blog-0-f199795ae248.herokuapp.com request_id=6dcc5a89-d219-4fbc-b13f-d31dca37b631 fwd="84.67.143.45" dyno= connect= service= status=503 bytes= protocol=https
+2024-11-18T11:14:37.216212+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=my-project-django-blog-0-f199795ae248.herokuapp.com request_id=9ed6b7e9-1bc2-46f8-a04b-223c8430b4ce fwd="84.67.143.45" dyno= connect= service= status=503 bytes= protocol=https
+2024-11-18T11:15:04.338094+00:00 app[api]: Deploy 57db24a8 by user oaq4klc9@students.codeinstitute.net
+2024-11-18T11:15:04.338094+00:00 app[api]: Release v17 created by user oaq4klc9@students.codeinstitute.net
+2024-11-18T11:15:05.587373+00:00 heroku[web.1]: State changed from crashed to starting
+2024-11-18T11:15:07.285860+00:00 heroku[web.1]: Starting process with command `gunicorn codestar.wsgi`
+2024-11-18T11:15:07.761509+00:00 app[web.1]: Python buildpack: Detected 512 MB available memory and 8 CPU cores.
+2024-11-18T11:15:07.761540+00:00 app[web.1]: Python buildpack: Defaulting WEB_CONCURRENCY to 2 based on the available memory.
+2024-11-18T11:15:07.811035+00:00 app[web.1]: /bin/bash: line 1: gunicorn: command not found
+2024-11-18T11:15:07.864836+00:00 heroku[web.1]: Process exited with status 127
+2024-11-18T11:15:07.891575+00:00 heroku[web.1]: State changed from starting to crashed
+2024-11-18T11:15:10.000000+00:00 app[api]: Build succeeded
+2024-11-18T11:20:46.715311+00:00 heroku[web.1]: State changed from crashed to starting
+2024-11-18T11:20:49.383851+00:00 heroku[web.1]: Starting process with command `gunicorn codestar.wsgi`
+2024-11-18T11:20:49.918604+00:00 app[web.1]: Python buildpack: Detected 512 MB available memory and 8 CPU cores.
+2024-11-18T11:20:49.918634+00:00 app[web.1]: Python buildpack: Defaulting WEB_CONCURRENCY to 2 based on the available memory.
+2024-11-18T11:20:49.973428+00:00 app[web.1]: /bin/bash: line 1: gunicorn: command not found
+2024-11-18T11:20:50.021366+00:00 heroku[web.1]: Process exited with status 127
+2024-11-18T11:20:50.047736+00:00 heroku[web.1]: State changed from starting to crashed
+2024-11-18T11:33:29.712973+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=HEAD path="/" host=my-project-django-blog-0-f199795ae248.herokuapp.com request_id=01e64d03-a67d-4c2b-887f-6d7ca6b92711 fwd="35.171.78.91" dyno= connect= service= status=503 bytes= protocol=https
+2024-11-18T11:33:30.131010+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=HEAD path="/" host=my-project-django-blog-0-f199795ae248.herokuapp.com request_id=90d82d36-30c6-44ee-b1a6-b2ede373378f fwd="35.171.78.91" dyno= connect= service= status=503 bytes= protocol=https
