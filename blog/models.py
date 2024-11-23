@@ -6,6 +6,9 @@ STATUS = ((0, "Draft"), (1, "Published"))
 
 # Create your models here.
 class Post(models.Model):
+    """
+    Stores a single blog post entry related to :model:`auth.User` .
+    """
     # The title values should be unique to avoid having blog posts of the same name confusing your users.
     title = models.CharField(max_length=200, unique=True)
     # In Django, the slug is what you'll use to build a URL for each of your posts.
@@ -32,6 +35,10 @@ class Post(models.Model):
 
 
 class Comment(models.Model):
+    """
+    Stores a single comment entry related to :model:`auth.User`
+    and :model:`blog.Post`
+    """
     # many-to-one relationship with the Post model. If a blog post is deleted the comments on it should also be deleted.
     post = models.ForeignKey(
         Post, on_delete=models.CASCADE, related_name="comments")
